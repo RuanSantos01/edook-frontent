@@ -1,143 +1,67 @@
 * {
-  overflow: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
-  color: black;
+li {
+  list-style-type: none;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.mat-button.mat-success {
+  color: #351A31;
 }
 
-.header {
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 7vh;
-  background-color: black;
+.mat-button.mat-success:hover {
   color: white;
-  font-weight: bold;
+  background-color: #351A31;
+  transition: 0.15s ease-in;
 }
 
-.tela-login {
-  height: 87vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-login {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: white;
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.card-login__image {
-  width: 10vw;
-  height: 10vw;
-}
-
-.card-login__input {
-  align-items: center;
+.ladoEdook {
   display: flex;
   flex-direction: column;
-}
-
-.card-login__input-item {
-  width: 25vw;
-}
-
-.card-login__footer {
-  width: 25vw;
-  display: flex;
-  flex-direction: row;
+  border: 1px solid red;
+  padding: 10px;
   align-items: center;
   justify-content: space-between;
 }
 
-.card-login__button {
-  width: 25vw;
+.logo {
+  width: 15vw;
+  height: 13vh;
 }
 
-.footer {
+.labelLogo {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 6vh;
-  font-weight: bold;
-  color: white;
+  font-weight: bolder;
 }
 
-.tela-login__background {
-  background-image: linear-gradient( to right, #76230e, #785DA8, #D79D08 );
-}
-
-.tela-login__deslogado{
-  height: 100vh;
-  padding: 1rem;
+.listaModulos {
+  padding-top: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
+  width: 15vw;
+  flex-direction: row;
+  justify-content: space-between;
+} 
 
-.card-logo {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background-color: #673AB7;
-  color: white;
-  width: 30vw;
-  height: 50vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.card-logo__logo {
-  margin-left: 8px;
-  height: 15vh;
-  width: 30vw;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.card-logo__p {
-  display: flex;
-  text-align: center;
-}
-
-.tela-login__logado{
-  height: 100vh;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.card-login__logado-divButton {
-  width: 20vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.card-login__logado-p {
+.itensListaModulo {
   text-decoration: none;
-  font-size: 1.5rem;
+  color: #351A31;
+}
+
+.div-listaUsuarios {
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  border: 1px solid blue;
+}
+
+.listaUsuarios {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
 }

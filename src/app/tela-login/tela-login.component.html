@@ -1,71 +1,31 @@
-<div class="tela-login__background">
+<div class="ladoEdook">
+  <img src="../../assets/logo.png" alt="logo" class="logo">
+  <label for="labelLogo" class="labelLogo">SISTEMA DE EDUCAÇÃO INTERATIVA</label>
+  <div class="listaModulos">
+    <button mat-button color="success">Criação</button>
+    <button mat-button color="success">Avaliação</button>
+    <button mat-button color="success">Formação</button>
+  </div>
 
-  <div>
-    <header class="header">
-      <p class="teste">Bem vindos ao Edook!</p>
-    </header>
-
-    <div class="tela-login">
-
-      <div class="card-login">
-
-        <div *ngIf="!logado" class="tela-login__deslogado">
-
-          <img src="./../../assets/AccountImage.png" alt="AccountImage" class="card-login__image">
-
-          <div class="card-login__input">
-            <div>
-              <mat-form-field appearance="fill" class="card-login__input-item">
-                <mat-label>Login</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-
-            <div>
-              <mat-form-field appearance="fill" class="card-login__input-item">
-                <mat-label>Senha</mat-label>
-                <input matInput>
-              </mat-form-field>
-            </div>
-          </div>
-
-          <div class="card-login__footer">
-            <mat-checkbox [(ngModel)]="checked">Lembrar de mim</mat-checkbox>
-            <a href="">Esqueci a senha</a>
-          </div>
-
-          <button mat-flat-button class="card-login__button" color="primary">Login</button>
-
-        </div>
-
-        <div *ngIf="logado" class="tela-login__logado">
-          <img src="./../../assets/AccountImage.png" alt="AccountImage" class="card-login__image">
-          <div>
-            <p class="card-login__logado-p">
-              Bem vindo, {{nomeLogado}} !
-            </p>
-          </div>
-          <div class="card-login__logado-divButton">
-            <button mat-flat-button class="card-login-logado__button" color="primary">Não sou eu</button>
-            <button mat-flat-button class="card-login-logado__button" color="primary">Entrar</button>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="card-logo">
-        <img src="./../../assets/logo.png" alt="logo" class="card-logo__logo" >
-        <div class="card-logo__p">
-          <p class="teste">Venha aprender de uma forma mais divertida, venha se gamificar com nós!</p>
-        </div>
-      </div>
-
-    </div>
-
-    <footer class="footer">
-      <div><p>Edook</p></div>
-      <div><p>© COPYRIGHT 2022 | Termos de uso e política de privacidade</p></div>
-    </footer>
+  <div class="div-listaUsuarios">
+    <mat-vertical-stepper #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>SOU ALUNO</ng-template>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup">
+        <ng-template matStepLabel>SOU PROFESSOR</ng-template>
+      </mat-step>
+      <mat-step [stepControl]="firstFormGroup">
+        <ng-template matStepLabel>SOU GESTOR</ng-template>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
+  
+  <div class="example-button-row">
+    <button mat-button color="success">Aluno</button>
+    <button mat-button color="success">Professor</button>
+    <button mat-button color="success">Gestor</button>
+    <button mat-button color="success">Contato</button>
   </div>
 
 </div>
