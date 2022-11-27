@@ -1,31 +1,142 @@
-<div class="ladoEdook">
-  <img src="../../assets/logo.png" alt="logo" class="logo">
-  <label for="labelLogo" class="labelLogo">SISTEMA DE EDUCAÇÃO INTERATIVA</label>
-  <div class="listaModulos">
-    <button mat-button color="success">Criação</button>
-    <button mat-button color="success">Avaliação</button>
-    <button mat-button color="success">Formação</button>
-  </div>
+<div class="telaLogin">
 
-  <div class="div-listaUsuarios">
-    <mat-vertical-stepper #stepper>
-      <mat-step [stepControl]="firstFormGroup">
-        <ng-template matStepLabel>SOU ALUNO</ng-template>
-      </mat-step>
-      <mat-step [stepControl]="secondFormGroup">
-        <ng-template matStepLabel>SOU PROFESSOR</ng-template>
-      </mat-step>
-      <mat-step [stepControl]="firstFormGroup">
-        <ng-template matStepLabel>SOU GESTOR</ng-template>
-      </mat-step>
-    </mat-vertical-stepper>
+  <div class="ladoLogin">
+
+    <div class="div-titulosLogin">
+      <div class="div-primeiroTexto">
+        <p>Conheça a TIMELINE que transforma aprendizado em pura diversão</p>
+      </div>
+  
+      <h3 class="txt-gamificacao">GAMIFICAÇÃO</h3>
+
+      <div class="div-saibamais">
+        <button mat-button color="saibaMais" class="div-saibamais_buttom">SAIBA MAIS</button>
+      </div>
+
+      <div class="div-segundoTexto">
+        <p>
+          Descubra como aprender e se divertir ao mesmo tempo. Com uma TIMELINE intuitiva, 
+          você acompanha as aulas postadas pelo seu professor e ainda verifica e acompanha
+          seu rendimento através de um sistema de XP que torna o aprendizado um jogo imersivo e desafiador
+        </p>
+      </div>
+
+    </div>
+
+    <div class="login" *ngIf="!login">
+      <div class="itens"></div>
+      <div class="div-imagem__contorno">
+        <div class="div-imagem__border"></div>
+      </div>
+      <div class="itens"></div>
+    </div>
+    
+    <div class="login" *ngIf="login">
+      <div class="itens"></div>
+      <div class="div-login">
+        <div class="div-login__login">
+          <div class="form-login">
+
+            <mat-form-field appearance="outline">
+              <mat-label>Nome</mat-label>
+              <input matInput placeholder="Fulano de Tal">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Matrícula</mat-label>
+              <input matInput placeholder="2190000">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Senha</mat-label>
+              <input matInput type="password" placeholder="********">
+            </mat-form-field>
+
+            <div class="list-buttons">
+              <button mat-button (click)="voltar()" color="submit">Voltar</button>
+              <button mat-button color="submit">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="itens"></div>
+    </div>
   </div>
   
-  <div class="example-button-row">
-    <button mat-button color="success">Aluno</button>
-    <button mat-button color="success">Professor</button>
-    <button mat-button color="success">Gestor</button>
-    <button mat-button color="success">Contato</button>
-  </div>
+  <div class="ladoEdook">
+    <div class="div-logo">
+      <img src="../../assets/logo.png" alt="logo" class="logo">
+      <label for="labelLogo" class="labelLogo">SISTEMA DE EDUCAÇÃO INTERATIVA</label>
+      <div class="listaModulos">
+        <button mat-button color="success">Criação</button>
+        <button mat-button color="success">Avaliação</button>
+        <button mat-button color="success">Formação</button>
+      </div>
+    </div>
 
+    <div class="div-principal">
+      <button class="circulo" (click)="logarAluno()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Aluno</p>
+      </button>
+      <svg width="100" height="100"><line x1="35" y1="0" x2="35" y2="100" stroke="#351A31" stroke-width="2.5"/></svg>
+      <button class="circulo" (click)="logarProfessor()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Professor</p>
+      </button>
+      <svg width="100" height="100"><line x1="35" y1="0" x2="35" y2="100" stroke="#351A31" stroke-width="2.5"/></svg>
+      <button class="circulo" (click)="logarGestor()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Gestor</p>
+      </button>
+    </div>
+
+    <div class="div-principal2" *ngIf="teste">
+      <button class="circulo" (click)="logarAluno2()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Aluno</p>
+      </button>
+      <svg width="100" height="100"><line x1="35" y1="0" x2="35" y2="100" stroke="#351A31" stroke-width="2.5"/></svg>
+      <button class="circulo" (click)="logarProfessor2()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Professor</p>
+      </button>
+      <svg width="100" height="100"><line x1="35" y1="0" x2="35" y2="100" stroke="#351A31" stroke-width="2.5"/></svg>
+      <button class="circulo" (click)="logarGestor2()">
+          <div class="primeiro_circulo-menor"></div>
+          <p class="paragrafo">Sou Gestor</p>
+      </button>
+    </div>
+
+    <div class="div-principal2" *ngIf="!teste">
+      <div class="div-principal-login">
+        <mat-form-field appearance="outline">
+          <mat-label>Nome</mat-label>
+          <input matInput placeholder="Fulano de Tal">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Matrícula</mat-label>
+          <input matInput placeholder="2190000">
+        </mat-form-field>
+  
+        <mat-form-field appearance="outline">
+          <mat-label>Senha</mat-label>
+          <input matInput type="password" placeholder="********">
+        </mat-form-field>
+  
+        <div class="list-buttons">
+          <button mat-button (click)="voltar2()" color="submit">Voltar</button>
+          <button mat-button color="submit">Entrar</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="listaAtores">
+      <button mat-button color="success">Aluno</button>
+      <button mat-button color="success">Professor</button>
+      <button mat-button color="success">Gestor</button>
+      <button mat-button color="success">Contato</button>
+    </div>
+  </div>
 </div>

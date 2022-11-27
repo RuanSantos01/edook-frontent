@@ -1,12 +1,35 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
+  overflow: none;
 }
 
+/* Tela Login*/
+.telaLogin {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-y: none;
+}
+
+/* Lado Edook*/
 li {
   list-style-type: none;
   text-decoration: none;
+}
+
+/* button {
+  border: 0 !important;
+} */
+
+:host /deep/ .material-icons {
+  font-family: 'Material Icons' !important;
+}
+
+::ng-deep .mat-vertical-stepper-header {
+  height: 200px;
+  padding: 50px 24px;
 }
 
 .mat-button.mat-success {
@@ -19,13 +42,25 @@ li {
   transition: 0.15s ease-in;
 }
 
+.mat-button.mat-saibaMais {
+  border-radius: 10px;
+  color: #FAD36B;
+}
+
 .ladoEdook {
+  width: 35vw;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+}
+
+.div-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
@@ -51,17 +86,390 @@ li {
   color: #351A31;
 }
 
-.div-listaUsuarios {
-  padding-top: 10rem;
+/* Lado Login */
+
+.ladoLogin {
   display: flex;
-  flex-direction: column;
-  height: 40vh;
-  border: 1px solid blue;
+  width: 75vw;
+  background-color: #351A31;
 }
 
-.listaUsuarios {
+.div-primeiroTexto {
+  width: 450px;
+  line-height: 45px;
+  font-size: 3rem;
+  color: white;
+  margin-top: 100px;
+  margin-left: 60px;
+  letter-spacing: 4px;
+  align-items: center;
+  display: flex;
+  text-align: justify;
+}
+
+.div-titulosLogin {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  justify-content: space-between;
+  width: 30vw;
+  height: 100vh;
 }
+
+.txt-gamificacao {
+  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #731626;
+  color: #FAD36B;
+  padding: 10px 0px;
+}
+
+.div-saibamais {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-saibamais_buttom {
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.div-segundoTexto {
+  height: 35vh;
+  width: 450px;
+  line-height: 30px;
+  font-size: 1.75rem;
+  color: white;
+  margin-left: 60px;
+  text-align: justify;
+}
+
+.div-imagem__border {
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/estudantes3.png');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.div-imagem__contorno {
+  background-image: linear-gradient(to right, #351A31 80%, white 20%);
+  shape-outside: url('../../assets/estudantes3.png');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.div-login {
+  background-image: linear-gradient(to right, #351A31 80%, white 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.div-login__login {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #351A31;
+}
+
+.form-login {
+  margin-top: 25%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(to right, #351A31 80%, white 20%);
+  flex-direction: column;
+}
+
+.itens {
+  background-image: linear-gradient(to right, #351A31 80%, white 20%);
+  width: 100%;
+  height: 10%;
+  background-color: white;
+}
+
+.mat-form-field {
+  width: 70%;
+}
+
+.mat-button.mat-submit {
+  color: white;
+  background-color: #351A31;
+}
+
+.mat-button.mat-submit:hover {
+  color: white;
+  background-color: #351A31;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.div-principal {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 45%;
+}
+
+.primeiro_circulo-menor {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #351A31;
+}
+
+.circulo {
+  border: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.circulo p {
+  padding-top: 11px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+
+.circulo:hover {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 110%;
+  height: 15%;
+  background-color: rgb(245, 240, 240);
+  transition: 0.25s ease-in;
+  text-decoration: underline;
+}
+
+.list-buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.div-principal-login {
+  display: none;
+}
+
+.div-principal2 {
+  display: none;
+}
+
+/* DINAMISMO*/
+
+@media (max-width: 1700px) {
+  * {
+    overflow: hidden;
+  }
+
+  .div-principal-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-principal {
+    width: 0;
+    height: 0;
+  }
+
+  .div-principal2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 45%;
+  }
+
+  .div-imagem__contorno {
+    width: 0px;
+    height: 0px;
+  }
+
+  .login {
+    width: 0px;
+  }
+
+  .ladoLogin {
+    width: 60%;
+  }
+
+  .ladoEdook {
+    width: 40%;
+  }
+
+  .div-titulosLogin {
+    width: 100%;
+  }
+
+  .div-primeiroTexto {
+    width: 88%;
+  }
+
+  .div-segundoTexto {
+    width: 88%;
+    font-size: 2.5rem;
+    line-height: 45px;
+    padding-top: 30px;
+  }
+
+}
+
+@media (max-width: 1470px) {
+  .listaModulos {
+    width: 100%;
+  }
+  
+  .div-segundoTexto {
+    width: 88%;
+    font-size: 2rem;
+    line-height: 35px;
+    padding-top: 30px;
+    margin-left: 50px;
+  }
+
+  .div-primeiroTexto {
+    margin-left: 50px;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 1050px) {
+  .logo {
+    width: 30vw;
+  }
+
+  .div-saibamais_buttom {
+    font-size: 1.2rem;
+    padding: 5px 40px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  * {
+    overflow: hidden;
+  }
+
+  .listaModulos {
+    width: 100%;
+  }
+
+  .div-imagem__contorno {
+    width: 0px;
+    height: 0px;
+  }
+
+  .div-titulosLogin {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .ladoLogin {
+    display: flex;
+    width: 60%;
+    background-color: #351A31;
+  }
+
+  .login {
+    width: 0px;
+  }
+
+  .ladoEdook {
+    width: 40%;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .div-saibamais_buttom {
+    font-size: 1.2rem;
+    padding: 7x 40px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .div-principal {
+    width: 80%;
+  }
+
+  .div-segundoTexto {
+    width: 88%;
+    font-size: 1.7rem;
+    line-height: 35px;
+    padding-top: 30px;
+    margin-left: 35px;
+  }
+
+  .div-primeiroTexto {
+    margin-left: 35px;
+  }
+
+}
+
+@media (max-width: 810px) {
+  .div-segundoTexto {
+    font-size: 1.3rem;
+  }
+
+  .listaAtores {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+@media (max-width: 770px) {
+  .div-primeiroTexto {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-height: 880px) {
+  .div-imagem__contorno {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+
+
