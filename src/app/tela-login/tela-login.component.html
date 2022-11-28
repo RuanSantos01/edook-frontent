@@ -38,23 +38,22 @@
           <div class="form-login">
 
             <mat-form-field appearance="outline">
-              <mat-label>Nome</mat-label>
-              <input matInput placeholder="Fulano de Tal">
+              <input matInput placeholder="{{nome}}" disabled [(ngModel)]="nome">
             </mat-form-field>
 
             <mat-form-field appearance="outline">
               <mat-label>Matrícula</mat-label>
-              <input matInput placeholder="2190000">
+              <input matInput placeholder="2190000" [(ngModel)]="matricula" (ngModelChange)="onChangeMatricula(matricula)">
             </mat-form-field>
 
             <mat-form-field appearance="outline">
               <mat-label>Senha</mat-label>
-              <input matInput type="password" placeholder="********">
+              <input matInput type="password" placeholder="********" [(ngModel)]="senha">
             </mat-form-field>
 
             <div class="list-buttons">
               <button mat-button (click)="voltar()" color="submit">Voltar</button>
-              <button mat-button color="submit">Entrar</button>
+              <button mat-button color="submit" (click)="entrar()">Entrar</button>
             </div>
           </div>
         </div>
@@ -111,24 +110,24 @@
     <div class="div-principal2" *ngIf="!teste">
       <div class="div-principal-login">
         <mat-form-field appearance="outline">
-          <mat-label>Nome</mat-label>
-          <input matInput placeholder="Fulano de Tal">
+          <input matInput placeholder="{{nome}}" disabled [(ngModel)]="nome">
         </mat-form-field>
   
         <mat-form-field appearance="outline">
           <mat-label>Matrícula</mat-label>
-          <input matInput placeholder="2190000">
+          <input matInput placeholder="2190000" [(ngModel)]="matricula" (ngModelChange)="onChangeMatricula(matricula)">
         </mat-form-field>
   
         <mat-form-field appearance="outline">
           <mat-label>Senha</mat-label>
-          <input matInput type="password" placeholder="********">
+          <input matInput type="password" [(ngModel)]="senha" placeholder="********">
         </mat-form-field>
   
         <div class="list-buttons">
           <button mat-button (click)="voltar2()" color="submit">Voltar</button>
-          <button mat-button color="submit">Entrar</button>
+          <button mat-button color="submit" (click)="entrar()">Entrar</button>
         </div>
+
       </div>
     </div>
     
