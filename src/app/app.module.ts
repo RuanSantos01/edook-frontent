@@ -16,11 +16,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TelaRegistroComponent } from './tela-registro/tela-registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TelaLoginComponent
+    TelaLoginComponent,
+    TelaRegistroComponent
   ],
   imports: [
     BrowserModule,

@@ -12,9 +12,11 @@ import { FormBuilder } from '@angular/forms';
 export class TelaLoginComponent implements OnInit {
 
   constructor(private _formBuilder: FormBuilder) { }
-  
-  @Input() matricula: string;
-  @Input() senha: number;
+
+  @Input()
+  matricula!: string;
+  @Input()
+  senha!: number;
 
   nome = "Nome";
 
