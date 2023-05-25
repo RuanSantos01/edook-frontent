@@ -1,0 +1,66 @@
+<div class="fundo-roxo"></div>
+<div class="fundo-branco">
+	<h1 class="texto-h1">Cadastrar Responsável</h1>
+	<div class="input-wrapper">
+
+		<img [src]="profileIcon" alt="ícone de perfil" id="profile-icon" class="profile-icon">
+
+		<div class="container-form mt-4">
+
+			<form class="form" action="#" method="post">
+				<div class="form-grupo">
+					<div class="d-flex" style="align-items: end;">
+						<label class="form-label">Alterar Foto</label>
+						<input type="file" (change)="onPhotoChange($event)" accept="image/*" style="display: none;" #photoInput>
+						<button class="bnt-photo form-input ms-auto" type="button" (click)="photoInput.click()" id="photoInput">
+		
+								<div class="div-upload me-2 ms-auto">
+									<i class="fas fa-upload"></i>
+								</div>
+								<span class="texto-upload me-auto">Selecione o(s) arquivo(s)</span>	
+						</button>
+					</div>
+				</div>
+
+
+				<div class="form-grupo">
+					<label for="nome" class="form-label">Responsável</label>
+					<input type="text" name="nome" class="form-input" id="nome" required>
+				</div>
+				
+				<div class="form-grupo">
+					<label for="fone" class="form-label">Telefone</label>
+					<input type="tel" name="phone" class="form-input" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+				</div>
+
+				<div class="form-grupo">
+					<label for="ano" class="form-label">Ano</label>
+					<select name="ano" class="dropdown" required>
+						<option value="" class="form-select-option"></option> 
+					</select>	
+				</div>
+
+				<div class="form-grupo">
+					<label for="turma" class="form-label">Turma</label>
+					<select name="turma" class="dropdown" required>
+						<option value="" class="form-select-option"></option> 
+					</select>	
+				</div>
+
+                <div class="form-grupo">
+					<label for="turno" class="form-label">Turno</label>
+					<select name="turno" class="dropdown" required>
+						<option value="" class="form-select-option"></option> 
+						<option value="Matutino" class="form-select-option">Matutino</option> 
+						<option value="Vespertino" class="form-select-option">Vespertino</option> 
+						<option value="Noturno" class="form-select-option">Noturno</option>
+					</select>	
+				</div>
+
+				<div class="d-flex mt-5 justify-content-around">
+					<button type="" class="bnt-cancelar btn btn-primary">Cancelar</button>
+					<button type="submit" class="bnt-salvar btn btn-primary">Salvar</button>
+				</div>
+            </form>
+	</div>
+</div>

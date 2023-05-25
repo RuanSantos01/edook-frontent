@@ -1,0 +1,43 @@
+mat-toolbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 19px 40px;
+    gap: 10px;
+    position: absolute;
+    width: 1280px;
+    height: 79px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #351A31;
+    }
+    
+    button {
+      height: 36px;
+      margin-left: auto;
+    }
+    
+    .button_vazio {
+      color: #351A31;
+    }
+    
+    .button_cheio {
+      color: #351A31;
+    }
+    
+    .botoes{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 454px;
+    height: 32px;
+    left: 786px;
+    top: 23px;
+    }

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-bold';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Bold.ttf);
+}
+
+.nav-toolbar {
+    padding: 19px 40px;
+}
+
+.nav-link {
+    color: #351A31;
+    font-family: 'Mulish-bold';
+}
+
+.navbar-nav{
+    font-size: 14px;
+    gap: 24px;
+}
+
+.fundo-roxo {
+    background-color: #351A31;
+    position: relative;
+    height: 90.3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.fundo-transparente{
+    background-color: rgba(255, 255, 255, 20%);
+    width: 400px;
+    height: 396px;
+    padding: 20px;
+}
+
+.texto-acessar{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish';
+    font-size: 24px;
+}
+
+.div-matricula{
+    margin-top: 30px;
+}
+
+.div-senha{
+    margin-top: 25px;
+}
+
+::placeholder {
+    font-family: 'Mulish';
+    color: black;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.input-matricula{
+    width: 360px;
+    height: 40px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+
+}
+
+.input-senha{
+    width: 360px;
+    height: 40px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+}
+
+.div-texto-pergunta1{
+    margin-top: 8px;
+}
+
+.div-texto-pergunta2{
+    margin-top: 25px;
+}
+
+.texto-pergunta{
+    color: white;
+    font-family: 'Mulish';
+    font-size: 16.8px;
+}
+
+.div-checkbox{
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-checkbox{
+    width: 24px;
+    height: 24px;
+}
+
+.texto-checkbox{
+    color: white;
+    font-family: 'Mulish';
+    font-size: 14px;
+    margin-top: 1.5px;
+    margin-left: 8px;
+}
+
+.botão-branco{
+    display: flex;
+    justify-content: center;
+    padding-top:20px;
+}
+
+.botão-branco button{
+    border-radius: 42px;
+    width: 120px;
+    height: 34px;
+}
+
+.botão-branco .btn {
+    line-height: 18px;
+}
+
+.textoazul-botão{
+    font-family: 'Mulish-bold';
+    color: #1351B4;
+    margin-left: -4px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

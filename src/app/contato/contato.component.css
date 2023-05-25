@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-bold';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Bold.ttf);
+}
+
+.nav-toolbar {
+    padding: 19px 40px;
+}
+
+.nav-link {
+    color: #351A31;
+    font-family: 'Mulish-bold';
+}
+
+.navbar-nav{
+    font-size: 14px;
+    gap: 24px;
+}
+
+.botão-acessar{
+    border-radius: 25px;
+}
+
+.fundo-roxo {
+    background-color: #351A31;
+    height: 281px;
+    width: 100vw;
+    display: flex;
+}
+
+.imagem1 {
+    padding: 65px 224px 0px 673px;
+}
+
+.chamada {
+    color: white;
+    font-family: 'Mulish';
+    font-size: 36px;
+}
+
+.div-chamada{
+    padding: 130px 0px 0px 142px;
+}
+
+.textoazul-botão{
+    font-family: 'Mulish-bold';
+    color: #1351B4;
+}
+
+.contato {
+    color: #D93636;;
+}
+
+.div-contato{
+    padding-top: 54px;
+    padding-left: 142px;
+}
+
+.texto-header{
+    color: #351A31;
+    font-family: 'Mulish-bold';
+    font-size: 24px;
+}
+
+.div-rua{
+    padding-top: 25px;
+}
+
+.texto-menor{
+    color: #351A31;
+    font-family: 'Mulish-bold';
+    font-size: 18px;
+}
+
+.div-email{
+    padding-top: 13px;
+}
+
+.div2-email{
+    padding-top: 25px;
+}
+
+.div-telefone{
+    padding-top: 33px;
+}
+
+.div2-telefone{
+    padding-top: 22px;
+}
+
+
+

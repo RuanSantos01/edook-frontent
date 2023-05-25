@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Mulish-bold';
+    src: url(../../assets/fonts/Mulish/static/Mulish-Bold.ttf);
+}
+
+.nav-toolbar {
+    padding: 19px 40px;
+}
+
+.nav-link {
+    color: #351A31;
+    font-family: 'Mulish-bold';
+}
+
+.navbar-nav{
+    font-size: 14px;
+    gap: 24px;
+}
+.nav-item button{
+    border-radius: 42px;
+    
+}
+#profile-icon{
+    margin-right: 10px;
+}
+
+.botão-acessar{
+    border-radius: 25px;
+}
+
+.fundo-roxo {
+    background-color: #351A31;
+    height: 281px;
+    width: 100vw;
+    display: flex;
+}
+
+.imagem1 {
+    padding: 65px 224px 0px 673px;
+}
+
+.chamada {
+    color: white;
+    font-family: 'Mulish';
+    font-size: 24px;
+    text-align: justify;
+    padding-bottom: 29px;
+}
+
+.div-chamada{
+    padding: 65px 0px 0px 142px;
+}
+
+.textoazul-botão{
+    font-family: 'Mulish-bold';
+    color: #1351B4;
+}
+
+.botão-branco{
+    padding-top: 29px;
+}
+
+.botão-branco button{
+    border-radius: 42px;
+}
+
+.div-texto{
+    padding: 203px 0px 0px 142px;
+    color: #351A31;
+    font-family: 'Mulish-bold';
+    font-size: 24px;
+}
+
+.div-texto-bottom{
+    padding-top: 30.12px;
+}
+
+.imagem-union{
+    display: flex;
+}
+
+.imagem {
+    padding: 75px 848px 0px 142px;
+}
+
+.union{
+    position: relative;
+    right: 500px;
+    top: 50px;
+}
+
+.union-texto{
+    color: #351A31;
+    font-family: 'Mulish-bold';
+    font-size: 16px;
+    position: relative;
+    right: 480px;
+    top: 55px;
+}
+
+.union-texto2{
+    margin-top: 125px;
+}
+
+.union-texto3{
+    margin-top: 128px;
+}
+
+.professor .union-texto2 {
+    margin-top: 115px;
+}
+
+.gestor .union-texto {
+    margin-top: 6px;
+}
+
+.gestor .union-texto2 {
+    margin-top: 138px;
+}
+
+.coordenador .union-texto {
+    margin-top: -10px;
+}
+
+.coordenador .union-texto2 {
+    margin-top: 115px;
+}
+
+.coordenador .union-texto3 {
+    margin-top: 115px;
+}
