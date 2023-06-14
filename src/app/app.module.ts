@@ -29,11 +29,13 @@ import { CadastroGestorComponent } from './cadastro-gestor/cadastro-gestor.compo
 import { CadastroAlunoComponent } from './cadastro-aluno/cadastro-aluno.component';
 import { CadastroResponsavelComponent } from './cadastro-responsavel/cadastro-responsavel.component';
 import { VerificarIdComponent } from './verificar-id/verificar-id.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
   { path: 'login', component: TelaLoginFinalComponent },
+  { path: 'register/student', component: CadastroAlunoComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contato', component: ContatoComponent }
 ];
@@ -53,7 +55,8 @@ const routes: Routes = [
     CadastroGestorComponent,
     CadastroAlunoComponent,
     CadastroResponsavelComponent,
-    VerificarIdComponent
+    VerificarIdComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -67,6 +70,7 @@ const routes: Routes = [
     MatSidenavModule,
     MatStepperModule,
     MatFormFieldModule,
+    HttpClientModule,
     RouterModule.forRoot(routes)
   ],
   exports: [RouterModule
