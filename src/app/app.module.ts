@@ -31,6 +31,7 @@ import { CadastroResponsavelComponent } from './cadastro-responsavel/cadastro-re
 import { VerificarIdComponent } from './verificar-id/verificar-id.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TelaTimelineComponent } from './tela-timeline/tela-timeline.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -45,6 +46,7 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     TelaLoginComponent,
+    TelaTimelineComponent,
     TelaRegistroComponent,
     TelaLoginFinalComponent,
     LandingPageComponent,
